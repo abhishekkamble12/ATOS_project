@@ -1,0 +1,45 @@
+# docker-compose.yml
+# Digital Twin of the Workforce Backend
+# Built for National Hackathon Winning Entry
+# Team Eklavya | Atos Srijan 2026
+#
+# Usage: docker compose up --build
+
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: workforce-twin-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./workforce_twin.db
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./workforce_twin.db:/app/workforce_twin.db
+    depends_on:
+      - redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; r=httpx.get('http://localhost:8000/health'); exit(0 if r.status_code==200 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    container_name: workforce-twin-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  redis_data:

@@ -1,0 +1,60 @@
+# requirements.txt
+# Digital Twin of the Workforce Backend
+# Built for National Hackathon Winning Entry
+# Team Eklavya | Atos Srijan 2026
+#
+# Install: pip install -r requirements.txt
+# Python: 3.12+
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi[standard]>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# ── Pydantic v2 ───────────────────────────────────────────────────────────────
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+pydantic[email]>=2.9.0
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy[asyncio]>=2.0.36
+aiosqlite>=0.20.0
+# For PostgreSQL (production): uncomment below
+# asyncpg>=0.30.0
+
+# ── Authentication ────────────────────────────────────────────────────────────
+PyJWT>=2.9.0
+passlib[bcrypt]>=1.7.4
+
+# ── Groq LLM ──────────────────────────────────────────────────────────────────
+groq>=0.13.0
+
+# ── Graph Analysis ────────────────────────────────────────────────────────────
+networkx>=3.4.2
+
+# ── RAG: Vector Search ────────────────────────────────────────────────────────
+faiss-cpu>=1.9.0
+sentence-transformers>=3.3.0
+
+# ── Caching / Task Queue ──────────────────────────────────────────────────────
+aioredis>=2.0.1
+
+# ── Rate Limiting ─────────────────────────────────────────────────────────────
+slowapi>=0.1.9
+
+# ── HTTP Client (tests + async) ───────────────────────────────────────────────
+httpx>=0.28.0
+
+# ── LangChain (minimal — prompt chaining) ────────────────────────────────────
+langchain-core>=0.3.0
+langchain-groq>=0.2.0
+
+# ── Data Processing ───────────────────────────────────────────────────────────
+numpy>=2.1.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+pytest-cov>=6.0.0
+
+# ── Development tools ────────────────────────────────────────────────────────
+python-multipart>=0.0.17    # for file upload support in FastAPI

@@ -1,0 +1,47 @@
+employee_id,name,role,department,current_tool,adoption_propensity,productivity_base
+ENG001,Arjun Sharma,Senior Software Engineer,Engineering,Slack,0.88,82
+ENG002,Priya Patel,Tech Lead,Engineering,Slack,0.92,88
+ENG003,Ravi Kumar,Junior Developer,Engineering,Email,0.75,65
+ENG004,Sneha Iyer,DevOps Engineer,Engineering,Slack,0.85,78
+ENG005,Vikram Nair,Staff Engineer,Engineering,Teams,0.91,90
+ENG006,Ananya Desai,QA Engineer,Engineering,Email,0.62,70
+ENG007,Karthik Reddy,Data Engineer,Engineering,Slack,0.83,76
+ENG008,Meera Krishnan,Backend Developer,Engineering,Slack,0.79,73
+ENG009,Suresh Venkat,Security Engineer,Engineering,Teams,0.7,80
+ENG010,Divya Balaji,Frontend Developer,Engineering,Slack,0.87,74
+PRD001,Rahul Mehta,Product Manager,Product,Teams,0.9,85
+PRD002,Kavya Rao,Senior PM,Product,Slack,0.88,87
+PRD003,Aditya Singh,Product Analyst,Product,Email,0.72,71
+PRD004,Pooja Gupta,UX Designer,Product,Figma,0.95,89
+PRD005,Nikhil Joshi,Business Analyst,Product,Teams,0.78,75
+SAL001,Amit Verma,Sales Director,Sales,Teams,0.65,83
+SAL002,Sunita Pillai,Account Executive,Sales,Email,0.58,77
+SAL003,Rajesh Tiwari,Business Development,Sales,Email,0.52,72
+SAL004,Deepika Nambiar,Sales Engineer,Sales,Teams,0.74,80
+SAL005,Pranav Shah,Inside Sales,Sales,Email,0.61,68
+HR001,Shalini Goyal,HR Director,HR,Teams,0.82,79
+HR002,Vivek Saxena,HR Business Partner,HR,Email,0.68,73
+HR003,Rekha Subramaniam,Talent Acquisition,HR,Teams,0.77,75
+HR004,Arun Chandrasekar,L&D Specialist,HR,Slack,0.84,71
+FIN001,Subramaniam Iyer,CFO,Finance,Email,0.42,86
+FIN002,Preeti Malhotra,Finance Manager,Finance,Email,0.48,80
+FIN003,Vinod Kumari,Financial Analyst,Finance,Email,0.55,74
+FIN004,Latha Srinivasan,Accounts Manager,Finance,Teams,0.63,77
+OPS001,Mohan Krishnamurthy,VP Operations,Operations,Teams,0.71,84
+OPS002,Shweta Pandey,Operations Manager,Operations,Teams,0.76,79
+OPS003,Rajiv Menon,Process Analyst,Operations,Email,0.59,70
+OPS004,Anjali Bose,Supply Chain Lead,Operations,Slack,0.8,76
+DS001,Dhruv Banerjee,Lead Data Scientist,Data Science,Slack,0.93,91
+DS002,Ishita Chakraborty,ML Engineer,Data Science,Slack,0.91,88
+DS003,Siddharth Mukherjee,Data Analyst,Data Science,Email,0.78,79
+DS004,Nandini Roy,AI Research Engineer,Data Science,Slack,0.96,94
+CS001,Varun Aggarwal,CS Director,Customer Success,Teams,0.8,82
+CS002,Tanvi Kapoor,Customer Success Manager,Customer Success,Teams,0.75,78
+CS003,Rohan Mishra,Support Engineer,Customer Success,Email,0.66,70
+CS004,Swati Bajaj,Implementation Specialist,Customer Success,Teams,0.73,74
+MKT001,Hardik Solanki,Marketing Director,Marketing,Slack,0.86,81
+MKT002,Riya Chandra,Content Strategist,Marketing,Slack,0.89,77
+MKT003,Sameer Dixit,Growth Hacker,Marketing,Slack,0.92,83
+INF001,Bharat Narayanan,Cloud Architect,Infrastructure,Slack,0.88,87
+INF002,Chitra Suresh,SRE / Platform Engineer,Infrastructure,Slack,0.84,84
+INF003,Gaurav Tripathi,Network Engineer,Infrastructure,Email,0.6,72
