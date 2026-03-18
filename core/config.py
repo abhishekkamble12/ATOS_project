@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite+aiosqlite:///./workforce_twin.db"
 
     # ── Groq LLM ────────────────────────────────────────────────────────────
-    GROQ_API_KEY: str = "gsk_placeholder_replace_with_real_key"
+    GROQ_API_KEY: str = "REPLACE_ME_WITH_REAL_KEY"
     GROQ_MODEL: str = "llama-3.1-70b-versatile"   # fastest: mixtral-8x7b-32768
     GROQ_TEMPERATURE: float = 0.3
     GROQ_MAX_TOKENS: int = 512
